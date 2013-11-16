@@ -1,0 +1,63 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+print "Content-type: text/html\n\n";
+
+my $FILE_NAME = 'printer_status';
+my $ERROR_MSG = "cannot open printer_status file\n";
+my $REFRESH_RATE = 60; # number of seconds inbetween checks
+
+{
+  open (my $status_file, '<', $FILE_NAME) or die $ERROR_MSG;
+  flock ($status_file, 1);
+  my $last_modified = (stat($status_file))[9];
+  close $status_file;
+  print_and_exit($FILE_NAME, $ERROR_MSG) if $last_modified + $REFRESH_RATE > time;
+}
+
+my @printers = `cshosts pubprinters`;
+chomp $printers[$_] foreach 0..scalar @printers - 1;
+
+my @raw_info = grep /^lw\d+\|/, `cat /lusr/share/etc/printcap`;
+my %printer_info;
+foreach (@raw_info) {
+  $printer_info{$1} = $2 if /(lw\d+).*?(\d\.\d+)/;
+}
+
+my %status;
+foreach my $index (0..scalar @printers - 1) {
+  my $name = shift @printers;
+  $status{$name} = `lpq -P$name`;
+  chomp $status{$name};
+  push (@printers, $name) unless $status{$name} =~ /cannot/;
+  my $sum = 0;
+  my $jobs = 0;
+  $jobs = ($jobs > $1 ? $jobs : $1) while($status{$name} =~ / (\d+)(?:st|nd|rd|th) \[/g);
+  $sum += $1 while($status{$name} =~ /(\d+) bytes/g);
+  $jobs++ if $sum != 0;
+  $status{$name} = "$jobs,$sum";
+}
+
+{
+  open (my $status_file, '>', $FILE_NAME) or die $ERROR_MSG;
+  flock ($status_file, 2);
+  seek ($status_file, 0, 0); truncate ($status_file, 0);
+  print $status_file "$_,$status{$_},GDC $printer_info{$_};" foreach sort {$a cmp $b} @printers;
+  close $status_file;
+}
+
+print_and_exit($FILE_NAME, $ERROR_MSG);
+
+sub print_and_exit {
+  open (my $status_file, '<', shift) or die shift;
+  flock ($status_file, 1);
+  while (<$status_file>) {print "$_";}
+  exit;
+}
+
+#lw701|Kyocera FS-9530DN in GDC 7.506:\
+#:mx#100000:\
+#:lp=:rm=printhost.cs.utexas.edu:rp=lw701:\
+#:sd=/usr/spool/lw701:
+
