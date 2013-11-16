@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN8PRORTMDEV</Machine>
+    <WindowsUser>Matthew</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\bin\Debug\UTCS Companion.exe">
+      <PackagePath>UTCS Companion.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\bin\Debug\UTCS Companion.pdb">
+      <PackagePath>UTCS Companion.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\packages\ModernChart.1.0.0\lib\netcore45\De.TorstenMandelkow.MetroChart.dll">
+      <PackagePath>De.TorstenMandelkow.MetroChart.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\down.png">
+      <PackagePath>Assets\down.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\headless.png">
+      <PackagePath>Assets\headless.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\occupied0.png">
+      <PackagePath>Assets\occupied0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\occupied1.png">
+      <PackagePath>Assets\occupied1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\occupied2.png">
+      <PackagePath>Assets\occupied2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\occupied3.png">
+      <PackagePath>Assets\occupied3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\occupied4.png">
+      <PackagePath>Assets\occupied4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\open0.png">
+      <PackagePath>Assets\open0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\open1.png">
+      <PackagePath>Assets\open1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\open2.png">
+      <PackagePath>Assets\open2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\open3.png">
+      <PackagePath>Assets\open3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\open4.png">
+      <PackagePath>Assets\open4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\printer0.png">
+      <PackagePath>Assets\printer0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\printer1.png">
+      <PackagePath>Assets\printer1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\printer2.png">
+      <PackagePath>Assets\printer2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\gates.jfif">
+      <PackagePath>Assets\gates.jfif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\firstFloor.jfif">
+      <PackagePath>Assets\firstFloor.jfif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\headless.jfif">
+      <PackagePath>Assets\headless.jfif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\printer.jfif">
+      <PackagePath>Assets\printer.jfif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\Assets\thirdFloor.jfif">
+      <PackagePath>Assets\thirdFloor.jfif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\bin\Debug\ItemsPage.xaml">
+      <PackagePath>ItemsPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\bin\Debug\SplitPage.xaml">
+      <PackagePath>SplitPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\packages\ModernChart.1.0.0\lib\netcore45\De.TorstenMandelkow.MetroChart\Themes\Generic.xaml">
+      <PackagePath>De.TorstenMandelkow.MetroChart\Themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

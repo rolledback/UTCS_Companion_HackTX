@@ -1,0 +1,35 @@
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\bin\Debug\UTCS Companion.exe
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\bin\Debug\UTCS Companion.pdb
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\bin\Debug\resources.pri
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\bin\Debug\AppxManifest.xml
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\bin\Debug\UTCS Companion.build.appxrecipe
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\App.g.i.cs
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\App.g.cs
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\Common\StandardStyles.g.i.cs
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\Common\StandardStyles.g.cs
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\ItemsPage.g.i.cs
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\ItemsPage.g.cs
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\SplitPage.g.i.cs
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\SplitPage.g.cs
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\XamlTypeInfo.g.cs
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\App.xaml
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\Common\StandardStyles.xaml
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\ItemsPage.xaml
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\SplitPage.xaml
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\UTCS Companion.exe
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\UTCS Companion.pdb
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\priconfig.xml
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\layout.resfiles
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\resources.resfiles
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\pri.resfiles
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\LanguageQualifiers.txt
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\ProjectArchitectures.txt
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\priconfig.xml.intermediate
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\layout.resfiles.intermediate
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\resources.resfiles.intermediate
+c:\users\matthew\documents\visual studio 2012\Projects\Companion\UTCS Companion\obj\Debug\pri.resfiles.intermediate
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\bin\Debug\De.TorstenMandelkow.MetroChart.pri
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\obj\Debug\UTCS Companion.csprojResolveAssemblyReference.cache
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\obj\Debug\UTCS Companion.csproj.GenerateResource.Cache
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\Companion\UTCS Companion\obj\Debug\De.TorstenMandelkow.MetroChart.pri.xml
