@@ -1,0 +1,71 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+print "Content-type: text/html\n\n";
+
+my $FILE_NAME = 'lab_status';
+my $ERROR_MSG = "cannot open lab_status file\n";
+my $REFRESH_RATE = 300; # number of seconds inbetween checks
+
+{
+  open (my $status_file, '<', $FILE_NAME) or die $ERROR_MSG;
+  flock ($status_file, 1);
+  my $last_modified = (stat($status_file))[9];
+  close $status_file;
+  print_and_exit($FILE_NAME, $ERROR_MSG) if $last_modified + $REFRESH_RATE > time;
+}
+
+my @third_floor = `cshosts candy64`;
+my @basement = `cshosts nethack64 && cshosts kol64`;
+my @headless = `cshosts virtues64 && cshosts sins64`;
+
+$third_floor[$_] = substr($third_floor[$_], 0, length($third_floor[$_]) - 1) for 0..scalar @third_floor - 1;
+$basement[$_] = substr($basement[$_], 0, length($basement[$_]) - 1) for 0..scalar @basement - 1;
+$headless[$_] = substr($headless[$_], 0, length($headless[$_]) - 1) for 0..scalar @headless - 1;
+
+my %machines;
+$machines{$_} = 3 foreach @third_floor;
+$machines{$_} = 1 foreach @basement;
+$machines{$_} = 0 foreach @headless;
+
+my %total;
+my %occupied;
+my %load;
+$total{$_} = $occupied{$_} = 0 foreach keys %machines;
+$load{$_} = 'down' foreach keys %machines;
+
+my @raw = `rwho -a`;
+
+foreach my $entry (@raw) {
+  $entry =~ /(\w+)\s+([\w-]+)(:+)/;
+  (my $user, my $machine, my $colon) = ($1, $2, $3);
+  if (exists $total{$machine}) {
+    $total{$machine}++;
+    $occupied{$machine} = 1 if $colon eq "::";
+  }
+}
+
+my @raw_load = grep !/down\s/, `ruptime`;
+foreach (0..scalar @raw_load - 1) {
+  $raw_load[$_] =~ /([\w-]+).*?(\d+\.\d\d), *(\d+\.\d\d), *(\d+\.\d\d)/;
+  $load{$1} = "$2,$3,$4";
+}
+
+{
+  open (my $status_file, '+<', $FILE_NAME) or die $ERROR_MSG;
+  flock ($status_file, 2);
+  seek ($status_file, 0, 0); truncate ($status_file, 0);
+  print $status_file "$_,$machines{$_},$occupied{$_},$total{$_},$load{$_};" foreach sort {$a cmp $b} keys %machines;
+  close $status_file;
+}
+
+print_and_exit($FILE_NAME, $ERROR_MSG);
+
+sub print_and_exit {
+  open (my $status_file, '<', shift) or die "cannot open lab_status file\n";
+  flock ($status_file, 1);
+  while (<$status_file>) {print "$_";}
+  exit;
+}
+
