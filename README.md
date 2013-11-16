@@ -15,7 +15,7 @@ What Is It?
 -----------
 Our companion app runs on Windows 8, and has 2 main features.  
 
-1. The ability to look at all the machines, including the basement lab, 3rd floor lab, and headless machines. The information gathered for these machines are the machine name, floor it is on if it is physically occupied, the total amount of users logged in (physical + ssh), and the load averages (1 min, 5 min, and 15 min).
+1. The ability to look at all the machines, including the basement lab, 3rd floor lab, and headless machines. The information gathered for these machines are the machine name, floor it is on, if it is physically occupied, the total amount of users logged in (physical + ssh), and the load averages (1 min, 5 min, and 15 min).
 2. The second feature is to look at all the printers and see their queue's, including how many documents are in the queue and the total amount of bytes left to be printed. This information is useful because there may only be one job on a floor but it could be many documents and bytes, making it more efficient to use another printer.
 
 Challenges Faced
