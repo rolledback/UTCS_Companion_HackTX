@@ -318,14 +318,14 @@ namespace UTCS_Companion.Data
                             src = "Assets/down.png";
                             content = "Machine Name: " + data[0] + "\nFloor: " + data[1] +
                                 "\nOccupied: " + "N/A" + "\nTotal logged in: " + "N/A" +
-                                "\nLoad 1 (prev 1 min): " + "N/A" + "\nLoad 2 (prev 5 min): " + "N/A" +
-                                "\nLoad 3 (prev 15 min): " + "N/A";
+                                "\nLoad Avg 1: " + "N/A" + "\nLoad Avg 2: " + "N/A" +
+                                "\nLoad Avg 3: " + "N/A";
                         }
                         else
                             content = "Machine Name: " + data[0] + "\nFloor: " + data[1] +
                                 "\nOccupied: " + occ + "\nTotal logged in: " + data[3] +
-                                "\nLoad 1: " + data[4] + "\nLoad 2: " + data[5] +
-                                "\nLoad 3: " + data[6];
+                                "\nLoad Avg 1: " + data[4] + "\nLoad Avg 2: " + data[5] +
+                                "\nLoad Avg 3: " + data[6];
                         group.Items.Add(new MachineDataItem(data[0], data[0], "Occupied: " + occ, src, "", content, group));
                     }
                 }
